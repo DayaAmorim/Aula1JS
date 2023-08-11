@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rascunho</title>
+</head>
+<body>
+    
+</body>
+
+<script type="text/JavaScript">
+
+
+    /* ESTA FUNÇÃO A SEGUIR IRÁ FAZER CALCULO COM DOIS VALORES */
+    
+    /* SOMA */
+    function calcSoma(z,y) {
+        resposta = z + y;
+        return resposta;
+    }
+    
+    console.log(calcSoma(4,6))
+    
+    
+    /* MULTI */
+    
+    function calcMulti(a,b) {
+        resposta = a * b;
+        return resposta;
+    }
+    
+    console.log(calcMulti(10,2))
+    
+    /* divisão */
+    
+    function calcDiv(c,d) {
+        resposta = c / d;
+        return resposta;
+    }
+    
+    console.log(calcDiv(10,2))
+    
+    /* subtração */
+    
+    function calcSub(e,f) {
+        resposta = e - f;
+        return resposta;
+    }
+    
+    console.log(calcSub(100,50))
+    
+    /* COMO FAZER CALCULO USANDO ALERT NA TELA DO USUARIO */
+    
+    
+    
+    function calcSoma(z,y){
+        resposta = z + y;                                             /* z e y são parâmetros*/
+        return alert("O resultado da soma:" + resposta);              /* No return usar a função alert para obter a notificação na tela */
+    };
+    
+    val1 = parseInt(prompt("Digite o valor 1"))
+    val2 = parseInt(prompt("Digite o valor 2"))
+    calcSoma(val1,val2)
+    
+    /* CRIAR UM FUNÇÃO ONDE CALCULA 5 NOTAS E PASSE A MÉDIA COM ALERT */
+    
+    
+    function calcMedia(a,b,c,d,e){
+        resposta =  (a+b+c+d+e)/5;                                            
+        return alert("O resultado da sua média é:" + resposta);
+    }
+    nota1 = parseInt(prompt("Digite sua nota 1"))
+    nota2 = parseInt(prompt("Digite sua nota 2"))
+    nota3 = parseInt(prompt("Digite sua nota 3"))
+    nota4 = parseInt(prompt("Digite sua nota 4"))
+    nota5 = parseInt(prompt("Digite sua nota 5"))
+    calcMedia(nota1,nota2,nota3,nota4,nota5)
+    
+    /* FIM DOS ANTERIORES */
+    
+    /* Função com média de nota e alerta de aprovado ou reprovado */
+    
+    function calcMediaResp(f,g,h,i,j,l){ /* AS LETRÃS AQUI SÃO CONSIDERADOS APENAS */
+        resposta =  (f+g+h+i+j,l)/6  /* FOI SOMADO AS 6 NOTAS E DIVIDO PELA A QUANTIDADE DE ELEMENTOS PARA OBTER A MÉDIA */
+        
+        if(resposta >6){     
+           resp="Aprovado";  /* EM IF ESTÁ INFORMAND QUE "SE A MÉDIA FOR MAIOR QUE 6, O ALUNO FOI APROVADO" */
+            
+        }else{
+            resp="REPROVADO"; /* EM ELSE ESTÁ INFORMAND QUE "SE A MÉDIA FOR MENOR QUE 6, O ALUNO FOI REPROVADO" */
+        }
+    
+        return alert(resp); /* NO "RETURN" COM A RESPOSTA, USANDO A FUNÇÃO "ALERT" NA TELA, FOI DADO A RESPOSTA QUE FOI IDENTIFICADA ATRAVÉS DOS COMANDOS INFORMADOS EM "IF" E "ELSE"*/
+    }
+    
+    
+    nota1 = parseFloat(prompt("Digite sua nota 1"))   /* nota1, nota2 etc... são nomes de variaveis, pode ser qualquer nome, mas que tenha relação com o conteúdo apresentado */
+    nota2 = parseFloat(prompt("Digite sua nota 2"))   /* "parseFloat" é para converter o que o usuário digitar em número decimal */
+    nota3 = parseFloat(prompt("Digite sua nota 3"))   /* "prompt" é um modal que recebe um valor (Fazer a pergunta)*/
+    nota4 = parseFloat(prompt("Digite sua nota 4"))   /* "alert" serve para exibir o resultado na caixa de notificação */
+    nota5 = parseFloat(prompt("Digite sua nota 5"))
+    nota6 = parseFloat(prompt("Digite sua nota 6"))
+    calcMediaResp(nota1,nota2,nota3,nota4,nota5,nota6);
+
+
+
+    /*   Função com média de nota e alerta de aprovado ou reprovado + pergunte seu nome */
+
+function calcMediaResp(f,g,h,i,j,l){ /* AS LETRÃS AQUI SÃO CONSIDERADOS APENAS */
+    resposta =  (f+g+h+i+j,l)/6  /* FOI SOMADO AS 6 NOTAS E DIVIDO PELA A QUANTIDADE DE ELEMENTOS PARA OBTER A MÉDIA */
+    
+    if(resposta >=6){     
+       resp="Aprovado";  /* EM IF ESTÁ INFORMAND QUE "SE A MÉDIA FOR MAIOR QUE 6, O ALUNO FOI APROVADO" */
+        
+    }else{
+        resp="REPROVADO --"; /* EM ELSE ESTÁ INFORMAND QUE "SE A MÉDIA FOR MENOR QUE 6, O ALUNO FOI REPROVADO" */
+    }
+
+    return alert(resp+nome); /* NO "RETURN" COM A RESPOSTA, USANDO A FUNÇÃO "ALERT" NA TELA, FOI DADO A RESPOSTA QUE FOI IDENTIFICADA ATRAVÉS DOS COMANDOS INFORMADOS EM "IF" E "ELSE"*/
+}
+
+
+nota1 = parseFloat(prompt("Digite sua nota 1"))   /* nota1, nota2 etc... são nomes de variaveis, pode ser qualquer nome, mas que tenha relação com o conteúdo apresentado */
+nota2 = parseFloat(prompt("Digite sua nota 2"))   /* "parseFloat" é para converter o que o usuário digitar em número decimal */
+nota3 = parseFloat(prompt("Digite sua nota 3"))   /* "prompt" é um modal que recebe um valor (Fazer a pergunta)*/
+nota4 = parseFloat(prompt("Digite sua nota 4"))   /* "alert" serve para exibir o resultado na caixa de notificação */
+nota5 = parseFloat(prompt("Digite sua nota 5"))
+nota6 = parseFloat(prompt("Digite sua nota 6"))
+nome = prompt("Digite seu nome")
+calcMediaResp(nota1,nota2,nota3,nota4,nota5,nota6);
+
+    
+</html>
